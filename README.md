@@ -29,21 +29,26 @@ Installazione su Windows
 Installazione su Mac
 --------------------
 Questo è il risultato di un tentativo non completato.
+```
 $ mkvirtualenv /usr/bin/python2.7 smartcrop
 $ pip install cython
 $ pip install https://github.com/numpy/numpy/archive/master.zip
 $ pip install https://github.com/scipy/scipy/archive/master.zip
+```
 If while installing scipy it says: "error: library dfftpack has Fortran sources but no Fortran compiler found"
 Then install it from here:
 https://gcc.gnu.org/wiki/GFortranBinaries
+```
 $ pip install pillow
 $ brew tap homebrew/science
 $ brew install opencv
+```
 If you cannot "import cv2" in Python:
-  cd /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
-  sudo ln -s /usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages/cv.py .
-  sudo ln -s /usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages/cv2.so .
-
+```
+cd /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
+sudo ln -s /usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages/cv.py .
+sudo ln -s /usr/local/Cellar/opencv/2.4.9/lib/python2.7/site-packages/cv2.so .
+```
 
 TODO
 ----
